@@ -2,6 +2,7 @@
   <div class="h-screen flex flex-col detail-page">
   <img class="bird" src="@/assets/images/bird.gif" alt="">
   <img class="ship1" src="@/assets/images/ship1.gif" alt="">
+  <img class="ship2" src="@/assets/images/ship1.gif" alt="">
   <img class="title" src="@/assets/images/phone-title.png" alt="">
    <div class="game-main">
     <div class="w100 ub ub-ac ub-pc search-box">
@@ -104,6 +105,24 @@ const evaluateScore = () => {
   height: 80px;
   transform: translate(-50%);
   z-index: 1;
+}
+.ship2{
+  position: absolute;
+  left:100%;
+  top:86%;
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+  animation: fadeInRight 12s linear infinite;
+}
+
+@keyframes fadeInRight {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -88px;
+  }
 }
 .title{
   position: absolute;
